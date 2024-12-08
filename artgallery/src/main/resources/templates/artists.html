@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(images/back.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 500vh;
+    }
+
+   .navbar {
+     width: 1200px;
+    height: 75px;
+    margin: auto;
+    }
+ body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .icon {
+      width: 200px;
+      float: left;
+      height: 70px;
+    }
+
+    .logo {
+      color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: right;
+    padding-top: 10px;
+    margin-top: 5px
+    }
+    .menu {
+      width: 400px;
+    float: left;
+    height: 70px;
+    }
+
+    ul {
+      float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    ul li {
+      list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-family: Arial;
+      font-weight: bold;
+      transition: 0.4s ease-in-ou
+    }
+
+    ul li a:hover {
+       color: #ff7200;
+    }
+
+    h1 {
+      font-size: 1em;
+      margin: 20px;
+      color: #ff7200;
+      display: flex;
+      justify-content: center;
+    }
+
+    .artist-container {
+      display: flex;
+      align-items: flex-start;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      width: 700px;
+      height: 300px;
+    }
+
+    .artist-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .artist-details {
+      flex: 1;
+    }
+
+    .artist-name-title {
+      font-size: 1.8em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .artist-description {
+      font-size: 1em;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="navbar">
+    <div class="icon">
+      <h2 class="logo">HDGArtGallery</h2>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">HOME</a></li>
+                <li><a href="artss">ARTS</a></li>
+                <li><a href="artists">ARTISTS</a></li>
+                <li><a href="createart">CREATE</a></li>
+                <li><a href="editart">UPDATE</a></li>
+                <li><a href="deleteart">DELETE</a></li>
+        <li><a href="imageinse">IMAGUP</a></li>
+      </ul>
+<br>
+<br>
+<br>
+
+
+<h1>Featured Artists</h1>
+
+<div class="artist-container">
+  <img src="images/artis1.jpg" alt="Leonardo da Vinci">
+  <div class="artist-details">
+    <div class="artist-name-title">Leonardo da Vinci</div>
+    <div class="artist-description">
+      Leonardo da Vinci, a Renaissance genius, was an Italian painter and inventor. His famous works, like *Mona Lisa* and *The Last Supper*, have left an indelible mark on art history.
+    </div>
+  </div>
+</div>
+
+<div class="artist-container">
+  <img src="images/artis2.jpg" alt="Vincent van Gogh">
+  <div class="artist-details">
+    <div class="artist-name-title">Vincent van Gogh</div>
+    <div class="artist-description">
+      Vincent van Gogh, known for his expressive post-impressionist style, created masterpieces like *Starry Night*. His vibrant colors and unique brushwork inspire millions.
+    </div>
+  </div>
+</div>
+<div class="artist-container">
+  <img src="images/artis3.jpg" alt="Vincent van Gogh">
+  <div class="artist-details">
+    <div class="artist-name-title">John Doe</div>
+    <div class="artist-description">
+      John Doe's paintings are celebrated for their vibrant colors and abstract forms, often reflecting themes of nature and human emotion. His unique approach combines bold strokes and intricate textures, creating visually striking compositions. Doe's work has been exhibited globally, earning critical acclaim and a dedicated following.
+    </div>
+  </div>
+</div>
+<div class="artist-container">
+  <img src="images/artis4.jpg" alt="Vincent van Gogh">
+  <div class="artist-details">
+    <div class="artist-name-title">Jane Smith</div>
+    <div class="artist-description">
+      Jane Smith's paintings are renowned for their delicate balance of realism and impressionism, capturing everyday scenes with a touch of ethereal beauty. Her use of soft palettes and light contrasts evokes a sense of tranquility and nostalgia.
+    </div>
+  </div>
+</div>
+</div>
+ </div>
+</div>
+
+
+
+</body>
+</html>

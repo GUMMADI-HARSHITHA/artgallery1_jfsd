@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Uploaded Images - HDG Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">HDGArtGallery</h2>
+        </div>
+        <br>
+        <div class="menu">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/artss">ARTS</a></li>
+                <li><a href="/artists">ARTISTS</a></li>
+                <li><a href="/createart">CREATE</a></li>
+                <li><a href="/editart">UPDATE</a></li>
+                <li><a href="/deleteart">DELETE</a></li>
+                <li><a href="/imageinse">IMAGUP</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Uploaded Images</h1>
+        <div class="image-gallery">
+            <ul>
+                <!-- Loop through the uploaded images -->
+                <li th:each="image : ${uploadedImages}">
+                    <img th:src="@{'/uploads/' + ${image}}" alt="Uploaded Image" style="max-width: 300px; max-height: 300px; margin: 10px;" />
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary">Back to Gallery</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

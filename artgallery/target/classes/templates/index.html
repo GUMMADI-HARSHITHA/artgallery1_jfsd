@@ -1,0 +1,78 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>HDG Art Gallery</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="main">
+<div class="navbar">
+<div class="icon">
+<h2 class="logo">HDGArtGallery</h2>
+</div>
+<br>
+<div class="menu">
+<ul>
+<li><a href="#">HOME</a></li>
+ <li><a href="artss">ARTS</a></li>
+ <li><a href="artists">ARTISTS</a></li>
+ <li><a href="createart">CREATE</a></li>
+ <li><a href="editart">UPDATE</a></li>
+ <li><a href="deleteart">DELETE</a></li>
+<li><a href="imageinse">IMAGUP</a></li>
+<li><a href ="/userimg">USERIMG</a></li>
+</ul>
+</div>
+</div>
+<div class="content">
+<h1>Welcome To HDG Art Gallery! </h1><br>
+<p class="par">With your continued support and art patronage we hope to make available handpicked Indian talent<br> from across the country exclusively for you.<br>
+
+With a fresh rebranded look, our gallery's vision is to encourage young Indian artists as well as to <br> ensure that you as a collector get the best of  Indian Art to enjoy in your personal spaces.
+</p>
+<div class="form">
+
+                    <h2>Login Here</h2>
+                    <form th:action="@{/process_register}" method="post" th:object="${arts}">
+                    <div class="m-3">
+                    <div class="form-group row">
+                    <label class="col-form-label col-4"></label>
+                    <div class="col-8">
+                    <input type="email" name="email" placeholder="Enter Email Here" class="form-control" th:field="*{email}" required />
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="m-3">
+                    <div class="form-group row">
+                    <label class="col-form-label col-4"></label>
+                    <div class="col-8">
+                    <input type="password" name="" placeholder="Enter Password Here" class="form-control" th:field="*{password}" required minlength="6" maxlength="10" />
+                  
+                   </div>
+                   </div>
+                   </div>
+                   <div>
+                    <button class="btnn"><a href="#">Login</a></button>
+                   </div>                   </form>
+                    <p class="link">Don't have an account<br>
+                    <a href="./signup">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+                     <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                    
+
+</div>
+</div>
+
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+

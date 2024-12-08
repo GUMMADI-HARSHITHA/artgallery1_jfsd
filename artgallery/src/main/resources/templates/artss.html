@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(images/back.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: right;
+    padding-top: 10px;
+    margin-top: 5px
+}
+    .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+    
+
+    h1 {
+      font-size: 1em;
+      margin: 20px;
+      color: #ff7200;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 20px;
+    }
+
+    .art-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .art-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .art-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .art-info {
+      padding: 20px;
+    }
+
+    .art-title {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .artist-name {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    .art-description {
+      font-size: 0.9em;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+<div class="navbar">
+<div class="icon">
+<h2 class="logo">HDGArtGallery</h2>
+</div>
+<br>
+<div class="menu">
+<ul>
+<li><a href="#">HOME</a></li>
+                <li><a href="artss">ARTS</a></li>
+                <li><a href="artists">ARTISTS</a></li>
+                <li><a href="createart">CREATE</a></li>
+                <li><a href="editart">UPDATE</a></li>
+                <li><a href="deleteart">DELETE</a></li>
+<li><a href="imageinse">IMAGUP</a></li>
+</ul>
+</div>
+<br>
+<br>
+
+
+  <h1>Art Gallery</h1>
+  
+  <div class="gallery">
+    <!-- Art Card 1 -->
+    <div class="art-card">
+      <img src="images/art6.jpeg" alt="Artwork 1">
+      <div class="art-info">
+        <h2 class="art-title">Mystic Landscape</h2>
+        <p class="artist-name">by John Doe</p>
+        <p class="art-description">This piece captures the essence of nature with mystical colors, portraying an enigmatic landscape that transports the viewer into a surreal world.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 2 -->
+    <div class="art-card">
+      <img src="images/art7.jpeg" alt="Artwork 2">
+      <div class="art-info">
+        <h2 class="art-title">Urban Symphony</h2>
+        <p class="artist-name">by Jane Smith</p>
+        <p class="art-description">An abstract representation of city life, this artwork harmonizes contrasting shapes and colors to express the rhythm of urban landscapes.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 3 -->
+    <div class="art-card">
+      <img src="images/art8.jpeg" alt="Artwork 3">
+      <div class="art-info">
+        <h2 class="art-title">Dreamscape</h2>
+        <p class="artist-name">by Emily Brown</p>
+        <p class="art-description">A journey into the subconscious, 'Dreamscape' blends fantasy and reality with vivid colors and swirling patterns that evoke deep emotions.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+    
+    <!-- Art Card 1 -->
+    <div class="art-card">
+      <img src="images/art10.jpeg" alt="Artwork 1">
+      <div class="art-info">
+        <h2 class="art-title"> Indian Tradition</h2>
+        <p class="artist-name"> By Kandi Narasimlu </p>
+        <p class="art-description"> An abstract representation of village life, this artwork harmonizes contrasting shapes and colors to express the rhythm of urban landscapes <br> Arcylic on canvas <br> 36 * 60 inches </p>
+      </div>
+    </div>
+
+    <!-- Art Card 2 -->
+    <div class="art-card">
+      <img src="images/art11.jpeg" alt="Artwork 2">
+      <div class="art-info">
+        <h2 class="art-title">Indian Tradition</h2>
+        <p class="artist-name">By Jayashree Patankar</p>
+        <p class="art-description">An abstract representation of village life, this artwork harmonizes contrasting shapes and colors to express the rhythm of urban landscapes <br> Arcylic on canvas <br> 8 * 9 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 3 -->
+    <div class="art-card">
+      <img src="images/art12.jpeg" alt="Artwork 3">
+      <div class="art-info">
+        <h2 class="art-title">Indian Tradition</h2>
+        <p class="artist-name">By Jayashree Patankar</p>
+        <p class="art-description">An abstract representation of village life, this artwork harmonizes contrasting shapes and colors to express the rhythm of urban landscapes <br> Arcylic on canvas <br> 8 * 9 inches</p>
+      </div>
+    </div>
+    
+    <!-- Art Card 1 -->
+    <div class="art-card">
+      <img src="images/art13.jpeg" alt="Artwork 1">
+      <div class="art-info">
+        <h2 class="art-title">Mystic Landscape</h2>
+        <p class="artist-name">By In House</p>
+        <p class="art-description">This piece captures the essence of nature with mystical colors, portraying an enigmatic landscape that transports the viewer into a surreal world.<br> 8 * 5 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 2 -->
+    <div class="art-card">
+      <img src="images/art14.jpeg" alt="Artwork 2">
+      <div class="art-info">
+        <h2 class="art-title">Mystic Landscape</h2>
+        <p class="artist-name">By In House</p>
+        <p class="art-description">This piece captures the essence of nature with mystical colors, portraying an enigmatic landscape that transports the viewer into a surreal world.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 3 -->
+    <div class="art-card">
+      <img src="images/art15.jpeg" alt="Artwork 3">
+      <div class="art-info">
+        <h2 class="art-title">Dreamscape</h2>
+        <p class="artist-name">by Emily Brown</p>
+        <p class="art-description">A journey into the subconscious, 'Dreamscape' blends fantasy and reality with vivid colors and swirling patterns that evoke deep emotions.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+    
+    <!-- Art Card 1 -->
+    <div class="art-card">
+      <img src="images/art16.jpeg" alt="Artwork 1">
+      <div class="art-info">
+        <h2 class="art-title">Mystic Landscape</h2>
+        <p class="artist-name">by John Doe</p>
+        <p class="art-description">This piece captures the essence of nature with mystical colors, portraying an enigmatic landscape that transports the viewer into a surreal world.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 2 -->
+    <div class="art-card">
+      <img src="images/art17.jpeg" alt="Artwork 2">
+      <div class="art-info">
+        <h2 class="art-title">Urban Symphony</h2>
+        <p class="artist-name">by Jane Smith</p>
+        <p class="art-description">An abstract representation of city life, this artwork harmonizes contrasting shapes and colors to express the rhythm of urban landscapes.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 3 -->
+    <div class="art-card">
+      <img src="images/art18.jpeg" alt="Artwork 3">
+      <div class="art-info">
+        <h2 class="art-title">Dreamscape</h2>
+        <p class="artist-name">by Emily Brown</p>
+        <p class="art-description">A journey into the subconscious, 'Dreamscape' blends fantasy and reality with vivid colors and swirling patterns that evoke deep emotions.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+    
+    <!-- Art Card 1 -->
+    <div class="art-card">
+      <img src="images/art19.jpeg" alt="Artwork 1">
+      <div class="art-info">
+        <h2 class="art-title">Buddha</h2>
+        <p class="artist-name">by Biltu</p>
+        <p class="art-description">This piece captures the essence of nature with mystical colors, portraying an enigmatic landscape that transports the viewer into a surreal world.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 2 -->
+    <div class="art-card">
+      <img src="images/art20.jpg" alt="Artwork 2">
+      <div class="art-info">
+        <h2 class="art-title">Buddha</h2>
+        <p class="artist-name">by Biltu</p>
+        <p class="art-description">An abstract representation of city life, this artwork harmonizes contrasting shapes and colors to express the rhythm of urban landscapes.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+
+    <!-- Art Card 3 -->
+    <div class="art-card">
+      <img src="images/img22.jpg" alt="Artwork 3">
+      <div class="art-info">
+        <h2 class="art-title">Buddha</h2>
+        <p class="artist-name">by Biltu</p>
+        <p class="art-description">A journey into the subconscious, 'Dreamscape' blends fantasy and reality with vivid colors and swirling patterns that evoke deep emotions.<br> 36 * 60 inches</p>
+      </div>
+    </div>
+    
+    
+    
+  </div>
+
+</body>
+</html>
